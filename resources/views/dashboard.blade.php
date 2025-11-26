@@ -77,8 +77,8 @@
                 @endforeach
             </ul>
         </div>
-
+       
     </div>
-
+     <h3 class="text-center font-semibold bg-gray-800 p-3 rounded glass-card">©All Rights Reserved <span class="">SyncXss</span></h3>
 </div>
 @endsection
