@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="space-y-6">
+<div class="space-y-6 max-w-xl mx-auto">
 
-    <h4 class="text-xl font-semibold text-gray-800">Edit Category</h4>
+    <h4 class="text-2xl text-gray-400 font-bold">Edit Category</h4>
 
     <form method="POST" action="{{ route('categories.update', $category->id) }}" class="space-y-4 bg-white shadow rounded-lg p-6">
         @csrf
@@ -36,10 +36,10 @@
 
         <!-- Buttons -->
         <div class="flex gap-2">
-            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+            <button type="submit" class=" glass-card bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
                 Update
             </button>
-            <a href="{{ route('categories.index') }}" class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">
+            <a href="{{ route('categories.index') }}" class=" glass-card bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">
                 Back
             </a>
         </div>

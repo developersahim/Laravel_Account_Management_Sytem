@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="space-y-6">
+<div class="space-y-6 max-w-xl mx-auto">
 
-    <h2 class="text-2xl font-semibold text-gray-800">Add Income</h2>
+    <h2 class="text-2xl text-gray-400 font-bold">Add Income</h2>
 
     <form action="{{ route('incomes.store') }}" method="POST" class="space-y-4 bg-white shadow rounded-lg p-6">
         @csrf
@@ -65,8 +65,8 @@
 
         <!-- Buttons -->
         <div class="flex gap-2">
-            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Save</button>
-            <a href="{{ route('incomes.index') }}" class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">Back</a>
+            <button type="submit" class="glass-card bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Save</button>
+            <a href="{{ route('incomes.index') }}" class="glass-card bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">Back</a>
         </div>
 
     </form>

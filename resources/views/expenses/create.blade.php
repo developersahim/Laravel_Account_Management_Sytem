@@ -3,7 +3,7 @@
 @section('content')
 <div class="space-y-6 max-w-xl mx-auto">
 
-    <h2 class="text-2xl font-semibold text-gray-800">Add Expense</h2>
+    <h2 class="text-2xl text-gray-400 font-bold">Add Expense</h2>
 
     <form action="{{ route('expenses.store') }}" method="POST" class="space-y-4">
         @csrf
@@ -44,8 +44,8 @@
         </div>
 
         <div class="flex gap-2">
-            <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">Save</button>
-            <a href="{{ route('expenses.index') }}" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition">Back</a>
+            <button type="submit" class="glass-card bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">Save</button>
+            <a href="{{ route('expenses.index') }}" class="glass-card bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition">Back</a>
         </div>
     </form>
 </div>

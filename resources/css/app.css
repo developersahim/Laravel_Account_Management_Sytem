@@ -1,11 +1,24 @@
 @import 'tailwindcss';
+@import 'flowbite'; 
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+@source "../node_modules/flowbite-datepicker";
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
+.glass-input {
+    @apply px-3 py-2 rounded-xl border border-white/20 bg-white/5 text-white focus:ring-indigo-400 focus:outline-none;
+}
+
+.btn-glass {
+    @apply px-4 py-2 rounded-xl font-medium transition;
 }

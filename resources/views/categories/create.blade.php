@@ -3,9 +3,9 @@
 @section('content')
 <div class="space-y-6  max-w-xl mx-auto">
 
-    <h4 class="text-xl font-semibold text-gray-800">Add Category</h4>
+    <h4 class="text-2xl text-gray-400 font-bold">Add Category</h4>
 
-    <a href="{{ route('categories.index') }}" class="inline-block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition mb-3">
+    <a href="{{ route('categories.index') }}" class=" glass-card inline-block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition mb-3">
         Back to List
     </a>
 
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Save Button -->
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+        <button type="submit" class="glass-card bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
             Save
         </button>
 
